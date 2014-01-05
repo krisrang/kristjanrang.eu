@@ -27,11 +27,9 @@ module Nome
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    require 'nome'
     require 'nome_redis'
     # Use redis for our cache
     config.cache_store = NomeRedis.new_redis_store
-
-    # nginx caches
-    config.action_dispatch.rack_cache = nil
   end
 end

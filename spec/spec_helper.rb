@@ -51,9 +51,3 @@ def freeze_time(now=Time.now)
   DateTime.stubs(:now).returns(DateTime.parse(now.to_s))
   Time.stubs(:now).returns(Time.parse(now.to_s))
 end
-
-# Spring.after_fork do
-#   # $redis.client.reconnect
-#   # Rails.cache.reconnect
-#   # MessageBus.after_fork
-# end

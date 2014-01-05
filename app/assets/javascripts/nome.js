@@ -1,0 +1,3 @@
+$(function() {
+  $.backstretch("/back.jpg");
+});
