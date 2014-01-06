@@ -24,6 +24,12 @@ gem "sentry-raven", github: 'getsentry/raven-ruby'
 # gem 'active_model_serializers'
 
 
+# PROD
+group :production do
+  gem 'rails_12factor'
+end
+
+
 # DEV & TEST
 group :test, :development do
   # dev helpers
