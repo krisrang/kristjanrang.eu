@@ -1,18 +1,36 @@
-.container
-  header
-    h1 Kristjan Rang
-    h2 Software Developer
+= cache Nome.start_time, 'index' do
+  .container
+    header
+      .center
+        h1 Kristjan Rang
+        h2 Software Developer
 
-  section
-    p email
-    p github
-    p blag
-    p CV
+    section.contact
+      h3 Contact
+      a href="mailto:mail@rang.ee" title="Email meh"
+        i.fa.fa-envelope
+      a href="https://github.com/krisrang" title="Github meh"
+        i.fa.fa-github-alt
+      /p blag
+      /p CV
 
-  section
-    p social stuff
+    /
+      section.social.hidden-xs
+        h3 Stalk Me
+        a href="http://www.last.fm/user/Noin" title="Last.fm - Noin"
+          i.icon-lastfm
 
-  footer
-    p &copy; 2014 Kristjan Rang
+        a href="https://steamcommunity.com/id/pebblesinspace" title="Steam - PebblesInSpace"
+          i.icon-steam
 
-/! Git: #{Nome.git_version}
+        a href="https://github.com/krisrang" title="Github - krisrang"
+          i.icon-github
+
+        a href="http://www.goodreads.com/user/show/21059347-kristjan" title="Goodreads - krisrang"
+          i.icon-book
+
+    footer
+      /p &copy; 2014 Kristjan Rang. Developer! Not a designer.
+
+  /! Git: #{Nome.git_version}
+  /! Start time: #{Nome.start_time}

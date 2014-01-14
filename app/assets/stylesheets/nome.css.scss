@@ -3,38 +3,93 @@
 $fa-font-path: "/fonts";
 @import "font-awesome/font-awesome";
 
+.backstretch {
+  opacity: 0.8;
+}
+
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: #FFF;
+  color: #141414;
+  background: #F6F6EF;
 }
 
 h1, h2, h3 {
-  font-family: 'Istok Web', sans-serif;
+  font-family: 'Contrail One', sans-serif;
   font-weight: 400;
 }
 
+h1 {
+  font-size: 44px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #331B1B;
+}
+
 header {
-  margin: 20px auto;
-  width: 370px;
-  background: rgba(0,0,0,0.5);
-  padding: 30px 50px;
+  text-align: center;
+  margin: 30px 0;
+
+  .center {
+    display: inline-block;
+    text-align: left;
+  }
+  
 
   h1, h2 {
     margin: 0;
-  }
-
-  h2 {
-
+    text-shadow: 2px 2px 3px #DBCCB0;
   }
 }
 
 section {
-  background: rgba(0,0,0,0.5);
-  padding: 30px 50px;
+  padding: 20px 0px;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  margin: 0 auto;
+  width: 350px;
+  border-radius: 3px;
+
+  h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #FFF;
+    margin: 0;
+  }
+
+  a {
+    margin-left: 10px;
+    color: #EDE0C5;
+
+    &:hover {
+      color: #88C8FF;
+      text-decoration: none;
+    }
+
+    &:first-child { margin-left: 0; }
+  }
+
+  &.contact {
+    font-size: 44px;
+  }
+
+  &.social {
+    font-size: 38px;
+  }
 }
 
 footer {
+  margin-top: 50px;
   text-align: center;
-  color: #AAA;
+  color: #888;
+}
+
+@media (max-width: 768px) {
+  section {
+    margin: 0 10px;
+    width: auto;
+  }
 }

@@ -8,4 +8,8 @@ module Nome
       $git_version = "unknown"
     end
   end
+
+  def self.start_time
+    $start_time ||= Time.now
+  end
 end

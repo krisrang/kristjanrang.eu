@@ -31,5 +31,8 @@ module Nome
     require 'nome_redis'
     # Use redis for our cache
     config.cache_store = NomeRedis.new_redis_store
+
+    # set set start time
+    Nome.start_time
   end
 end
