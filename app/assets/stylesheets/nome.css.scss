@@ -1,95 +1,92 @@
-@import "bourbon";
-
-$fa-font-path: "http://d1n7h570e77zwp.cloudfront.net/fonts";
-@import "font-awesome/font-awesome";
-
-.backstretch {
-  opacity: 0.8;
-}
-
-
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #141414;
-  background: #F6F6EF;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  background: #333;
+  color: #999;
+  margin: 128px 64px;
+  -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3 {
-  font-family: 'Contrail One', sans-serif;
-  font-weight: 400;
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FFF;
+
+  &:hover {
+    color: #999;
+  }
 }
 
 h1 {
-  font-size: 44px;
-}
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 1em;
+  max-width: 600px;
+  font-weight: 400;
 
-h2 {
-  font-size: 30px;
-  color: #331B1B;
-}
-
-header {
-  text-align: center;
-  margin: 30px 0;
-
-  .center {
-    display: inline-block;
-    text-align: left;
-  }
-  
-
-  h1, h2 {
-    margin: 0;
-    text-shadow: 2px 2px 3px #DBCCB0;
-  }
-}
-
-section {
-  padding: 20px 0px;
-  text-align: center;
-  background: rgba(0,0,0,0.4);
-  margin: 0 auto;
-  width: 350px;
-  border-radius: 3px;
-
-  h3 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    font-style: italic;
+   strong {
+    font-weight: 700;
     color: #FFF;
-    margin: 0;
-  }
-
-  a {
-    margin-left: 10px;
-    color: #EDE0C5;
-
-    &:hover {
-      color: #88C8FF;
-      text-decoration: none;
-    }
-
-    &:first-child { margin-left: 0; }
-  }
-
-  &.contact {
-    font-size: 44px;
-  }
-
-  &.social {
-    font-size: 38px;
   }
 }
 
-footer {
-  margin-top: 50px;
-  text-align: center;
-  color: #888;
+.skills {
+  font-style: italic;
 }
 
-@media (max-width: 768px) {
-  section {
-    margin: 0 10px;
-    width: auto;
+.contact {
+  margin-top: 4em;
+  font-size: 16px;
+
+  h1 {
+    font-size: 24px;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    margin: 1em 0;
+  }
+}
+
+.internet {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+
+  li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    white-space: nowrap;
+    margin-right: 1em;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 64px 32px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .contact {
+    font-size: 14px;
   }
 }

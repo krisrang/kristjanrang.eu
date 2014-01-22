@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:url('http://d1n7h570e77zwp.cloudfront.net/fonts/icomoon.eot');
-  src:url('http://d1n7h570e77zwp.cloudfront.net/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('http://d1n7h570e77zwp.cloudfront.net/fonts/icomoon.woff') format('woff'),
-    url('http://d1n7h570e77zwp.cloudfront.net/fonts/icomoon.ttf') format('truetype'),
-    url('http://d1n7h570e77zwp.cloudfront.net/fonts/icomoon.svg#icomoon') format('svg');
+  src:url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.eot');
+  src:url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.woff') format('woff'),
+    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.ttf') format('truetype'),
+    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.svg#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,4 +34,7 @@
 }
 .icon-book:before {
   content: "\e603";
+}
+.icon-mail:before {
+  content: "\e604";
 }

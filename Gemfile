@@ -17,6 +17,7 @@ gem 'less-rails'
 gem 'bourbon'
 gem 'slim-rails'
 gem 'ember-rails'
+gem 'asset_sync'
 
 
 # BACKEND

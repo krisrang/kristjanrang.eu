@@ -1,36 +1,52 @@
 - cache ['index', Nome.start_time.to_s] do
-  .container
-    header
-      .center
-        h1 Kristjan Rang
-        h2 Software Developer
+  header
+    h1 
+      strong Kristjan Rang
+      |  is a developer for all things web.
+  
+  ul.skills
+    li Full-stack web developer.
+    li Part time devops and sysadmin.
+    li App developer for Windows and OS X.
+    li Cat poker.
+    li Video game enthusiast.
 
-    section.contact
-      h3 Contact
-      a href="mailto:mail@rang.ee" title="Email meh"
-        i.fa.fa-envelope
-      a href="https://github.com/krisrang" title="Github meh"
-        i.fa.fa-github-alt
-      /p blag
-      /p CV
+  .contact
+    h1 Contact
 
-    /
-      section.social.hidden-xs
-        h3 Stalk Me
-        a href="http://www.last.fm/user/Noin" title="Last.fm - Noin"
-          i.icon-lastfm
+    .vcard
+      h2
+        a href="http://www.kristjanrang.eu/" class="url fn" Kristjan Rang        
 
-        a href="https://steamcommunity.com/id/pebblesinspace" title="Steam - PebblesInSpace"
-          i.icon-steam
+      .adr
+        div
+          span.locality Tallinn
+          | ,
+          span.country-name Estonia
+        div
+          a href="mailto:mail@rang.ee" class="email" mail@rang.ee
+          | ,
+          span.tel+372 58 130653
 
-        a href="https://github.com/krisrang" title="Github - krisrang"
-          i.icon-github
+      p
+        a href="http://h2vx.com/vcf/kristjanrang.eu/" ↓ vCard
 
-        a href="http://www.goodreads.com/user/show/21059347-kristjan" title="Goodreads - krisrang"
-          i.icon-book
+  ul.internet
+    li
+      a href="mailto:mail@rang.ee" title="Email"
+        i.icon-mail
+    li
+      a href="https://github.com/krisrang" title="Github"
+        i.icon-github
+    li
+      a href="http://www.last.fm/user/Noin" title="Last.fm"
+        i.icon-lastfm
+    li
+      a href="https://steamcommunity.com/id/pebblesinspace" title="Steam"
+        i.icon-steam
+    li
+      a href="http://www.goodreads.com/user/show/21059347-kristjan" title="Goodreads"
+        i.icon-book
 
-    footer
-      /p &copy; 2014 Kristjan Rang. Developer! Not a designer.
-
-  /! Git: #{Nome.git_version}
-  /! Start time: #{Nome.start_time}
+/! Git: #{Nome.git_version}
+/! Start time: #{Nome.start_time}
