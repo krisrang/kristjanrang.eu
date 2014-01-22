@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.eot');
-  src:url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.eot?#iefix') format('embedded-opentype'),
-    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.woff') format('woff'),
-    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.ttf') format('truetype'),
-    url('<%= Rails.configuration.action_controller.asset_host %>/assets/icomoon.svg#icomoon') format('svg');
+  src:url('<%= asset_path 'icomoon.eot' %>');
+  src:url('<%= asset_path 'icomoon.eot?#iefix' %>?#iefix') format('embedded-opentype'),
+    url('<%= asset_path 'icomoon.woff' %>') format('woff'),
+    url('<%= asset_path 'icomoon.ttf' %>') format('truetype'),
+    url('<%= asset_path 'icomoon.svg' %>#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
