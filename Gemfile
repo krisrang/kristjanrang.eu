@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
-ruby '2.1.0'
+ruby '2.1.1'
 
-gem 'rails', '4.1.0.beta1'
+gem 'rails', '4.1.0.rc1'
 
 gem 'hiredis'
 gem 'redis', :require => ["redis", "redis/connection/hiredis"]
@@ -9,19 +9,19 @@ gem 'redis-rails'
 
 
 # ASSETS
-gem 'sass-rails', '~> 4.0.0.rc1'
-gem 'uglifier', '>= 1.3.0'
+gem 'sass-rails'
+gem 'uglifier'
 gem 'therubyracer', require: 'v8'
 gem 'jquery-rails'
 gem 'less-rails'
 gem 'bourbon'
 gem 'slim-rails'
 gem 'ember-rails'
-gem 'asset_sync'
+# gem 'asset_sync'
 
 
 # BACKEND
-gem "sentry-raven", github: 'getsentry/raven-ruby'
+gem "sentry-raven"
 # gem 'active_model_serializers'
 
 
