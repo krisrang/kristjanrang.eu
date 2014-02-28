@@ -23,6 +23,7 @@ gem 'ember-rails'
 # BACKEND
 gem "sentry-raven"
 # gem 'active_model_serializers'
+gem 'newrelic_rpm'
 
 
 # PROD
