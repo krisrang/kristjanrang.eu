@@ -3,7 +3,7 @@ module Nome
     return $git_version if $git_version
 
     begin
-      $git_version ||= `git rev-parse HEAD`.strip
+      $git_version ||= ENV['GIT_REV'] || `git rev-parse HEAD`.strip
     rescue
       $git_version = "unknown"
     end
